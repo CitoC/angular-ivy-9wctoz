@@ -1,0 +1,40 @@
+<h2>Forms</h2>
+
+<!-- Template Driven Form -->
+<!-- Include a unique name property to bind ngModel controls in Template Driven Forms -->
+<form>
+  <input
+    type="text"
+    name="username"
+    [(ngModel)]="templateForm.username"
+    placeholder="Username">
+  <input
+    type="text"
+    name="email"
+    [(ngModel)]="templateForm.email"
+    placeholder="Email">
+  <input
+    type="password"
+    name="password"
+    [(ngModel)]="templateForm.password"
+    placeholder="Password">
+  <button (click)="onClick()">Click Me!</button>
+</form>
+
+<!-- Reactive Forms -->
+<!-- Bind formGroup to form and formControlName to controls in Reactive Forms -->
+<!-- <form [formGroup]="fBuilder">
+  <input
+    type="text"
+    placeholder="Username"
+    formControlName="username">
+  <input
+    type="text"
+    placeholder="Email"
+    formControlName="email">
+  <input
+    type="password"
+    placeholder="Password"
+    formControlName="password">
+  <button (click)="onClick()">Click Me!</button>
+</form> -->
